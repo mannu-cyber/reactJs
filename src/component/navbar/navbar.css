@@ -1,12 +1,55 @@
-.nav{
-    padding: 2vw 4vw;
-    background-color: #0000B8;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+  padding: 1.5vw 4vw;
+  background-color: #AFDBF5;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  position: relative;
 }
 
+.navbarList {
+  text-decoration: none;
+  font-size: 1.3vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #2d0707;
+  position: relative;
+  padding: 3px 0vw;
+  font-weight: 500;
+}
 
-.navbarList{
-    text-decoration: none;
-    font-size: 1.5vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #dadada;
+.login{
+    position: absolute;
+    right: 4vw;
+}
+
+.navbarList::after {
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: -5%;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+  transition: 0.5s ease;
+}
+
+.navbarList::before {
+  position: absolute;
+  width: 0;
+  right: 0;
+  top: 0%;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+  transition: 0.5s ease;
+}
+
+.navbarList:hover::after,
+.navbarList:hover::before {
+  width: 90%;
 }

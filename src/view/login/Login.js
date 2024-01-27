@@ -4,8 +4,8 @@ function Login() {
   return (
     <div>
 
-      <p>this is the navbar</p>
       <Navbar/>
+      <p>This is login Page</p>
     </div>
   )
 }
