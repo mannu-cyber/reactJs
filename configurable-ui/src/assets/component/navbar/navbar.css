@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family:nav ;
+    src: url(../../fonts/CreatoDisplay-Medium.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    padding: 1vw 2vw;
+    background-image: linear-gradient( 45deg, #FFF5C3 20%, #9452A5 100%);
+        justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.4vw;
+    color: rgb(0, 0, 0);
+    font-family: nav;
+}
+
+.left{
+    gap: 20px;
+    display: flex;
+}
