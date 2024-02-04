@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Navbar from '../../component/navbar/Navbar'
 function company() {
   return (
-    <div>company</div>
+<>
+<Navbar/>
+
+<h1>this is company page</h1>
+</>
   )
 }
 

@@ -1,8 +1,16 @@
 import React from 'react'
+import Navbar from '../../component/navbar/Navbar'
 
 function Work() {
   return (
-    <div>Work</div>
+<>
+<Navbar/>
+
+<h1>thi  is work page
+
+</h1>
+ 
+</>
   )
 }
 

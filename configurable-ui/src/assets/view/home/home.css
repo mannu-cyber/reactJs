@@ -1,0 +1,45 @@
+.home{
+    /* background-color: red; */
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+    background-color: #161E22;
+    color: #F5F8EE;
+}
+
+.home .left{
+    width: 10vw;
+    flex-direction: column;
+    padding-top: 1vw;
+}
+
+.home .left h5{
+    line-height: .1;
+    font-family: nav;
+    font-weight: 999;
+    font-size: 1.2vw;
+}
+
+.home .center{
+    width: 50vw;
+    font-size: 3vw;
+    font-family: nav;
+}
+
+.home .center h1{
+    line-height: 1.1;
+}
+
+.right{
+  position: relative;
+  width: 20vw;
+}
+
+.right img{
+height: 80vh;
+position: absolute;
+left: -11vw;
+top: -8vw;
+
+}

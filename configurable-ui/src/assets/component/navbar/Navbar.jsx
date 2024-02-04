@@ -1,32 +1,50 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 import "./navbar.css";
 import logo from "../../images/logo.png";
-
+import { Link } from "react-router-dom";
 function Navbar() {
+
+
+  const animate = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.from(animate.current.children,{
+      opacity:0,
+      y:20,
+      stagger:.12,
+    })
+
+
+
+  
+  }, []);
+
+
+
   return (
-    <>
-      <nav>
-        <img src={logo} alt="" className="logo" />
+ <>
+    <nav ref={animate} > 
+      <Link  to="/">
+ 
+        <img  src={logo} alt="" className="logo"  />
+      </Link>
 
-        <div className="left">
-          <a href="#">Work</a>
-          <a href="#">Company</a>
-          <a href="#">Blog</a>
-          <a href="#">Career</a>
-          <a href="#">Contact</a>
-        </div>
-        <div className="right">
-          <a href="#">Login/SignUP</a>
-        </div>
-      </nav>
-
-      <div className="hero">
-        <div className="brand"></div>
-        <div className="center"></div>
-
-        <div className="img"></div>
+      <div className="left " >
+        <Link to="/work">Work</Link>
+        <Link to="/company">Company</Link>
+        <Link to="/blogs">Blog</Link>
+        <Link to="/career">Career</Link>
+        <Link to="/contact">Contact</Link>
       </div>
-    </>
+      <div className="right">
+        <Link to="/login"></Link>
+      </div>
+    </nav>
+
+ </>
   );
 }
 
