@@ -9,6 +9,7 @@ import Company from "./assets/view/company/company";
 import Home from "./assets/view/home/Home";
 import Navbar from "./assets/component/navbar/Navbar";
 import Login from "./assets/view/blogs/login/Login";
+import 'remixicon/fonts/remixicon.css'
 
 
 const router = createBrowserRouter([

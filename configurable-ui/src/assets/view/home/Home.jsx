@@ -6,40 +6,46 @@ import gsap from "gsap";
 
 function Home() {
   const animate = useRef(null);
-
+  const animatehead = useRef(null);
+  const animeh5 = useRef(null);
   useEffect(() => {
     const tl = gsap.timeline();
 
-    tl.from(animate.current, {
-      y: 20,
-    });
+    tl.from(animeh5.current.children, {
+      opacity: 0,
+      stagger: 0.1,
+      y: 10,
+      rotate: 20,
+      transformOrigin: "center left ",
+      start: "center left",
+    })
 
-    
+      .from(animatehead.current.children, {
+        opacity: 0,
+        rotate: 8,
+        y: 40,
+        stagger: 0.1,
+        transformOrigin: "center left",
+        start: "center left",
+      })
+
+      .from(animate.current, {
+        y: 20,
+
+        opacity: 0,
+      });
   }, []);
 
-  const animatehead = useRef(null);
   useEffect(() => {
     const tl = gsap.timeline();
-
-tl.from(animatehead.current.children,{
-  opacity: 0,
-  rotate: 8,
-  duration: 0.5,
-  y: 40,
-  stagger: 0.1,
-  transformOrigin: "center left",
-  start: "center left",
-
-})
-
-  },[])
+  }, []);
 
   return (
     <>
       <Navbar />
 
       <div className="home">
-        <div className="left">
+        <div className="left" ref={animeh5}>
           <h5>building</h5>
           <h5>stunnig</h5>
           <h5>products, </h5>
@@ -58,7 +64,15 @@ tl.from(animatehead.current.children,{
         </div>
       </div>
 
-      <h1>ths is home page</h1>
+      <div className="second-page">
+        <h1 className="case">
+          Case Study <i class="ri-arrow-right-up-line"></i>
+        </h1>
+
+
+
+        
+      </div>
     </>
   );
 }
