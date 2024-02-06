@@ -1,0 +1,16 @@
+.parent{
+  
+ width: 350px;
+ height: 320px;
+ margin:1vw;
+ border: 1px solid black;
+ border-radius: 10px;
+ /* background-color: #f5f8ee; */
+ color: #161e22;
+ padding: 1vw;
+display: inline-block;
+}
+
+.case-card-p{
+    margin-top: 1vw;
+}

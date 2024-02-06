@@ -30,11 +30,11 @@ opacity:0,
         </Link>
 
         <div className="left" ref={animate}>
-          <Link to="/work">Work</Link>
-          <Link to="/company">Company</Link>
-          <Link to="/blogs">Blog</Link>
-          <Link to="/career">Career</Link>
-          <Link to="/contact">Contact</Link>
+          < Link to="/work" className="lft-itm">Work</Link>
+          <Link to="/company" className="lft-itm">Company</Link>
+          <Link to="/blogs" className="lft-itm">Blog</Link>
+          <Link to="/career" className="lft-itm">Career</Link>
+          <Link to="/contact" className="lft-itm">Contact</Link>
         </div>
         <div className="right">
           <Link to="/login"></Link>

@@ -22,14 +22,14 @@ nav{
 .logo{
     height: 30px;
 }
-
-nav a{
+  .lft-itm{
     text-decoration: none;
     font-size: 1.4vw;
-    color: #F5F8EE;
+    color: #F5F8EE ;
     font-family: nav;
-  
 }
+
+
 
 .left{
     gap: 20px;

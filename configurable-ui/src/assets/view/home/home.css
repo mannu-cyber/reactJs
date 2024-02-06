@@ -53,6 +53,7 @@
     padding: 2vw 4vw;
     background-color: #161e22;
     color: #f5f8ee;
+    overflow-x:auto;
 }
 
 .case{
@@ -74,5 +75,17 @@ bottom: -3px;
 background-color: #f5f8ee;
 height: 2px;
 width: 100%;
+}
+
+.case-study-wrapper{
+  min-width: 200vw;
+  height: auto;
+  background-color: #f5f8eed8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between  ;
+  padding: .1vw 0;
+  margin-top: 1vw;
+overflow-x: auto;
 }
 

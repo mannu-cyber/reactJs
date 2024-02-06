@@ -3,6 +3,10 @@ import Navbar from "../../component/navbar/Navbar";
 import homeimg from "../../images/homeimg.jpeg";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { CASE_STUDY } from "../../component/config";
+import CaseCard from "../../component/case/CaseCard";
+
+
 
 function Home() {
   const animate = useRef(null);
@@ -36,12 +40,14 @@ function Home() {
       });
   }, []);
 
-  useEffect(() => {
-    const tl = gsap.timeline();
-  }, []);
+  // useEffect(() => {
+  //   const tl = gsap.timeline();
+  // }, []);
 
   return (
     <>
+ 
+
       <Navbar />
 
       <div className="home">
@@ -66,12 +72,19 @@ function Home() {
 
       <div className="second-page">
         <h1 className="case">
-          Case Study <i class="ri-arrow-right-up-line"></i>
+          Case Study <i className="ri-arrow-right-up-line"></i>
         </h1>
+ 
 
+ <div className="case-study-wrapper">
+      {CASE_STUDY.map((caseobj, index)=>{
 
+        const {title, discritption}  = caseobj;
+        return (<CaseCard title={title} discritption={discritption} key={index}/>)
 
-        
+      })}
+
+      </div>
       </div>
     </>
   );
